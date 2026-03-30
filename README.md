@@ -1,6 +1,6 @@
-# Sistema de Detección de Productos con YOLO + MQTT
+# Sistema de detección de productos en supermercado y envio de datos (YOLO + SQL + MQTT + APP Android) 
 
-Detecta productos en vídeo usando YOLO11 con tracking ByteTrack y publica los resultados por MQTT con datos enriquecidos desde MySQL.
+![Visual](ejemplo.png)
 
 ## 📁 Estructura del Proyecto
 
