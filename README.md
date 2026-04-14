@@ -72,7 +72,7 @@ Edita `config/config.py` para ajustar:
 ## 📊 Flujo del Sistema
 
 ```
-video.mp4 ──► prueba_video.py ──► detecciones.json ──► mqtt.py ──► broker MQTT
+video.mp4 ──► prueba_video.py ──► detecciones.json ──► mqtt.py ──► broker MQTT ──► App Android
                 (YOLO + ByteTrack)      (output/)         (MySQL enrichment)
 ```
 
