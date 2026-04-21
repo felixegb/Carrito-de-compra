@@ -2,12 +2,12 @@
 
 ![Visual](ejemplo.png)
 
-## 📁 Estructura del Proyecto
+## Estructura del Proyecto
 
 ```
 mercadona/
-├── prueba_video.py     # ⭐ Detección en vídeo (PRINCIPAL)
-├── mqtt.py             # ⭐ Publicación MQTT de detecciones
+├── prueba_video.py     # Detección en vídeo (PRINCIPAL)
+├── mqtt.py             # Publicación MQTT de detecciones
 ├── sort.py             # Algoritmo de tracking SORT (Kalman)
 │
 ├── modelo/
@@ -28,7 +28,7 @@ mercadona/
 └── README.md
 ```
 
-## 🚀 Uso
+##  Uso
 
 ### 1. Detección en Vídeo
 ```bash
@@ -42,14 +42,14 @@ python mqtt.py
 ```
 Lee `output/detecciones.json`, enriquece los datos con MySQL y publica cada producto en el topic `mercado/datos` cada segundo.
 
-## 📋 Requisitos
+## Requisitos
 
 - Python 3.11+
 - CUDA 11.8+ (opcional, para GPU)
 - MySQL con base de datos `mydb` y tabla `productos`
 - Broker MQTT accesible (por defecto `test.mosquitto.org:1883`)
 
-## 🔧 Instalación
+## Instalación
 
 ```bash
 # Activar entorno virtual
@@ -61,7 +61,7 @@ pip install -r requirements.txt
 pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
 ```
 
-## ⚙️ Configuración
+## Configuración
 
 Edita `config/config.py` para ajustar:
 - Rutas de modelo, vídeo y salida
@@ -69,7 +69,7 @@ Edita `config/config.py` para ajustar:
 - Conexión MySQL (`DB_CONFIG`)
 - Broker MQTT (`MQTT_BROKER`, `MQTT_PORT`, `MQTT_TOPIC`)
 
-## 📊 Flujo del Sistema
+## Flujo del Sistema
 
 ```
 video.mp4 ──► prueba_video.py ──► detecciones.json ──► mqtt.py ──► broker MQTT ──► App Android
